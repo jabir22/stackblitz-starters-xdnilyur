@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Transaction - Business Hisab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="app-header">
+    <div class="header-left">
+      <div class="logo">📊 Business Hisab</div>
+    </div>
+
+    <div class="header-center">
+      <input type="text" placeholder="🔎 Search..." class="search-bar">
+    </div>
+
+    <div class="header-right">
+      <a href="notifications.html"><button class="icon-btn">🔔</button></a>
+      <button class="icon-btn">⚙️</button>
+      <div class="profile-menu">
+        <span class="profile-name">👤 Admin ▾</span>
+        <ul class="dropdown">
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="settings.html">Settings</a></li>
+          <li><a href="logout.html">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Layout -->
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="accounts.html" class="active">Accounts</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="sales.html">Sales</a></li>
+        <li><a href="purchases.html">Purchases</a></li>
+        <li><a href="customers.html">Customers</a></li>
+        <li><a href="suppliers.html">Suppliers</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <h1>✏️ Edit Transaction</h1>
+
+      <section class="section">
+        <form class="form">
+          <div class="form-group">
+            <label>Transaction ID:</label>
+            <input type="text" value="TXN12345" readonly>
+          </div>
+
+          <div class="form-group">
+            <label>Date:</label>
+            <input type="date" value="2025-09-26">
+          </div>
+
+          <div class="form-group">
+            <label>Type:</label>
+            <select>
+              <option value="credit" selected>Credit</option>
+              <option value="debit">Debit</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Amount (৳):</label>
+            <input type="number" value="5000">
+          </div>
+
+          <div class="form-group">
+            <label>Description:</label>
+            <textarea rows="3">Payment received from Rahim</textarea>
+          </div>
+
+          <button type="submit" class="btn-primary">💾 Update Transaction</button>
+          <a href="transactions.html" class="btn-secondary">↩ Back</a>
+        </form>
+      </section>
+    </main>
+  </div>
+
+    <script src="JS/app.js"></script>
+  <script src="JS/include.js"></script>
+</body>
+</html>

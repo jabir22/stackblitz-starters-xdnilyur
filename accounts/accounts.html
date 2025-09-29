@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accounts - Business Hisab</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <!-- Header -->
+  <div id="header-container"></div>
+  <!-- Layout -->
+  <div class="layout">
+    <!-- Sidebar -->
+    <div id="sidebar-container"></div>
+    <main class="main-content">
+            <!-- Total Balance -->
+      <div class="total-balance">
+        Total Balance: <span id="totalBalance">৳ 0</span>
+      </div>
+
+      <h1>💳 Account List</h1>
+      <a href="add-account.html" class="btn-save add-account">➕ Add Account</a>
+      <a href="../accounts\edit-account.html" class="btn-save add-account">➕ Edit Account Info.</a>
+      <a href="add-account.html" class="btn-save add-account">➕ Show Transections</a>
+      <table id="accountsTable">
+        <thead>
+          <tr>
+            <th>Account Name</th>
+            <th>Type</th>
+            <th>Balance</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- JS দিয়ে লোড হবে -->
+        </tbody>
+      </table>
+
+    </main>
+  </div>
+    <script src="../JS/app.js"></script>
+  <script src="../JS/include.js"></script>
+  <script src="../JS/accounts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Product - Business Hisab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="app-header">
+    <div class="header-left">
+      <div class="logo">➕ Add Product</div>
+    </div>
+    <div class="header-center"></div>
+    <div class="header-right">
+      <a href="notifications.html"><button class="icon-btn">🔔</button></a>
+      <button class="icon-btn">⚙️</button>
+      <div class="profile-menu">
+        <span class="profile-name">👤 Admin ▾</span>
+        <ul class="dropdown">
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="settings.html">Settings</a></li>
+          <li><a href="logout.html">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Layout -->
+  <div class="layout">
+    <aside class="sidebar">
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <h1>➕ Add New Product</h1>
+      <form class="form">
+        <label>Product Name</label>
+        <input type="text" placeholder="Enter product name">
+
+        <label>Category</label>
+        <select>
+          <option>Building Materials</option>
+          <option>Construction</option>
+          <option>Hardware</option>
+        </select>
+
+        <label>Price</label>
+        <input type="number" placeholder="Enter price">
+
+        <label>Stock Quantity</label>
+        <input type="number" placeholder="Enter stock quantity">
+
+        <label>Description</label>
+        <textarea placeholder="Enter product description"></textarea>
+
+        <button type="submit" class="btn-save">Save Product</button>
+      </form>
+    </main>
+  </div>
+</body>
+</html>

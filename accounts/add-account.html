@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Account</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+   <!-- Header -->
+ <!-- Header -->
+<div id="header-container"></div>
+
+
+  <!-- Layout -->
+  <div class="layout">
+    
+    <!-- Sidebar -->
+       <div id="sidebar-container"></div>
+    <!-- Main Content -->
+
+ 
+    <main class="main-content">
+      <h1>Add New Account</h1>
+      <form id="accountForm" class="form">
+        <label>Account Name</label>
+        <input type="text" id="accName" placeholder="Enter account name" required>
+
+        <label>Type</label>
+        <select id="accType">
+          <option>Cass</option>
+          <option>Bank</option>
+          <option>Mobile Bank</option>
+        </select>
+
+        <label>Opening Balance</label>
+        <input type="number" id="accBalance" placeholder="৳" required>
+
+        <button type="submit" class="btn-save">Save Account</button>
+      </form>
+              <a href="accounts.html" class="btn-save">⬅ Back to List</a>
+    </main>
+  </div>
+
+  <script src="../JS/app.js"></script>
+  <script src="../JS/include.js"></script>
+  <script src="../JS/add-account.js"></script>
+
+</body>
+</html>

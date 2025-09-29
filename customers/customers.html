@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customers - Business Hisab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="app-header">
+    <div class="header-left">
+      <div class="logo">👥 Customers</div>
+    </div>
+    <div class="header-right">
+      <a href="notifications.html"><button class="icon-btn">🔔</button></a>
+      <button class="icon-btn">⚙️</button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="customers.html" class="active">Customers</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <h1>👥 Customer List</h1>
+      <a href="add-customer.html" class="btn-save">➕ Add Customer</a>
+
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Balance</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>C-001</td>
+            <td>Rahim</td>
+            <td>017XXXXXXXX</td>
+            <td>rahim@mail.com</td>
+            <td>৳ 5,000</td>
+            <td>
+              <a href="customer-details.html" class="btn-edit">View</a>
+              <a href="edit-customer.html" class="btn-edit">Edit</a>
+              <button class="btn-delete">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>C-002</td>
+            <td>Karim</td>
+            <td>018XXXXXXXX</td>
+            <td>karim@mail.com</td>
+            <td>৳ 2,000</td>
+            <td>
+              <a href="customer-details.html" class="btn-edit">View</a>
+              <a href="edit-customer.html" class="btn-edit">Edit</a>
+              <button class="btn-delete">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+</body>
+</html>

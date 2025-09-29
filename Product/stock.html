@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Management - Business Hisab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="app-header">
+    <div class="header-left">
+      <div class="logo">📦 Stock Management</div>
+    </div>
+    <div class="header-right">
+      <a href="notifications.html"><button class="icon-btn">🔔</button></a>
+      <button class="icon-btn">⚙️</button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <h1>📦 Stock Management</h1>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Current Stock</th>
+            <th>Min Threshold</th>
+            <th>Status</th>
+            <th>Adjust</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cement</td>
+            <td>8 Bag</td>
+            <td>10 Bag</td>
+            <td><span style="color:red;font-weight:bold">Low</span></td>
+            <td><button class="btn-edit">Add Stock</button></td>
+          </tr>
+          <tr>
+            <td>Rod 10mm</td>
+            <td>85 Pcs</td>
+            <td>20 Pcs</td>
+            <td><span style="color:green;font-weight:bold">OK</span></td>
+            <td><button class="btn-edit">Adjust</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+</body>
+</html>

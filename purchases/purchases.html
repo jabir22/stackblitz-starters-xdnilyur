@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purchases - Business Hisab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="app-header">
+    <div class="header-left">
+      <div class="logo">🛒 Purchases</div>
+    </div>
+    <div class="header-right">
+      <a href="notifications.html"><button class="icon-btn">🔔</button></a>
+      <button class="icon-btn">⚙️</button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="purchases.html" class="active">Purchases</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main -->
+    <main class="main-content">
+      <h1>🛒 All Purchases</h1>
+      <a href="add-purchase.html" class="btn-save">➕ Add Purchase</a>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Purchase ID</th>
+            <th>Date</th>
+            <th>Supplier</th>
+            <th>Total Amount</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>P-001</td>
+            <td>2025-09-20</td>
+            <td>ABC Traders</td>
+            <td>৳ 50,000</td>
+            <td>Paid</td>
+            <td>
+              <a href="purchase-details.html" class="btn-edit">View</a>
+              <a href="edit-purchase.html" class="btn-edit">Edit</a>
+            </td>
+          </tr>
+          <tr>
+            <td>P-002</td>
+            <td>2025-09-22</td>
+            <td>XYZ Suppliers</td>
+            <td>৳ 25,000</td>
+            <td>Unpaid</td>
+            <td>
+              <a href="purchase-details.html" class="btn-edit">View</a>
+              <a href="edit-purchase.html" class="btn-edit">Edit</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+</body>
+</html>

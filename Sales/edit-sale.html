@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Sale - Business Hisab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="app-header">
+    <div class="logo">📊 Business Hisab</div>
+    <div class="user-info">👤 Admin</div>
+  </header>
+
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="sales.html" class="active">Sales</a></li>
+        <li><a href="add-sale.html">➕ Add Sale</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <h1>✏️ Edit Sale</h1>
+
+      <div class="section">
+        <form class="form">
+          <label>Customer Name</label>
+          <input type="text" value="Mr. Rahim">
+
+          <label>Customer Phone</label>
+          <input type="text" value="017XXXXXXXX">
+
+          <label>Product</label>
+          <select>
+            <option selected>Cement</option>
+            <option>Rod 10mm</option>
+            <option>Brick</option>
+          </select>
+
+          <label>Quantity</label>
+          <input type="number" value="10">
+
+          <label>Price per Unit (৳)</label>
+          <input type="number" value="500">
+
+          <label>Discount (%)</label>
+          <input type="number" value="10">
+
+          <label>Payment Status</label>
+          <select>
+            <option selected>Paid</option>
+            <option>Due</option>
+          </select>
+
+          <button type="submit" class="btn-save">💾 Update Sale</button>
+        </form>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

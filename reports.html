@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Hisab - Reports</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <!-- Header -->
+<div id="header-container"></div>
+
+
+  <!-- Layout -->
+  <div class="layout">
+    <!-- Sidebar -->
+       <div id="sidebar-container"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <h1>📊 Reports</h1>
+
+      <!-- Filter Options -->
+      <section class="section">
+        <h2>🔍 Filter Reports</h2>
+        <form class="form">
+          <label for="from">From Date</label>
+          <input type="date" id="from">
+
+          <label for="to">To Date</label>
+          <input type="date" id="to">
+
+          <label for="type">Report Type</label>
+          <select id="type">
+            <option>Sales</option>
+            <option>Purchases</option>
+            <option>Stock</option>
+            <option>Accounts</option>
+          </select>
+
+          <button type="submit" class="btn-save">Generate</button>
+        </form>
+      </section>
+
+      <!-- Sample Report Table -->
+      <section class="section">
+        <h2>📋 Report Preview</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Type</th>
+              <th>Details</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2025-09-25</td>
+              <td>Sale</td>
+              <td>Cement 20 Bag</td>
+              <td>৳ 10,000</td>
+            </tr>
+            <tr>
+              <td>2025-09-26</td>
+              <td>Purchase</td>
+              <td>Rod 1 Ton</td>
+              <td>৳ 55,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+    <script src="JS/app.js"></script>
+  <script src="JS/include.js"></script>
+</body>
+</html>

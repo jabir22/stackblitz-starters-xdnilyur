@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Product - Business Hisab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="app-header">
+    <div class="header-left">
+      <div class="logo">✏️ Edit Product</div>
+    </div>
+    <div class="header-right">
+      <a href="notifications.html"><button class="icon-btn">🔔</button></a>
+      <button class="icon-btn">⚙️</button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <h1>✏️ Edit Product (P-001)</h1>
+      <form class="form">
+        <label>Product Name</label>
+        <input type="text" value="Cement">
+
+        <label>Category</label>
+        <select>
+          <option selected>Building Materials</option>
+          <option>Construction</option>
+          <option>Hardware</option>
+        </select>
+
+        <label>Price</label>
+        <input type="number" value="500">
+
+        <label>Stock Quantity</label>
+        <input type="number" value="120">
+
+        <label>Description</label>
+        <textarea>High quality cement for construction works.</textarea>
+
+        <button type="submit" class="btn-save">Update Product</button>
+      </form>
+    </main>
+  </div>
+</body>
+</html>

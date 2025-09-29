@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Transaction</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+ <!-- Header -->
+<div id="header-container"></div>
+
+
+  <!-- Layout -->
+  <div class="layout">
+    <!-- Sidebar -->
+       <div id="sidebar-container"></div>
+
+
+    <main class="main-content">
+      <h1>Add New Transaction</h1>
+      <form class="form">
+        <label>Select Account</label>
+        <select>
+          <option>Cash</option>
+          <option>Bank</option>
+        </select>
+
+        <label>Type</label>
+        <select>
+          <option>Deposit</option>
+          <option>Expense</option>
+        </select>
+
+        <label>Amount</label>
+        <input type="number" placeholder="৳">
+
+        <label>Note</label>
+        <input type="text" placeholder="Transaction note">
+
+        <button type="submit" class="btn-save">Save Transaction</button>
+      </form>
+    </main>
+  </div>
+    <script src="JS/app.js"></script>
+  <script src="JS/include.js"></script>
+</body>
+</html>

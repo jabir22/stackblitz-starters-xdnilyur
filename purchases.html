@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Hisab - Purchases</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <!-- Header -->
+<div id="header-container"></div>
+
+
+  <!-- Layout -->
+  <div class="layout">
+    <!-- Sidebar -->
+       <div id="sidebar-container"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <h1>📦 Purchase Management</h1>
+
+      <!-- Purchase Entry Form -->
+      <section class="section">
+        <h2>➕ New Purchase Entry</h2>
+        <form class="form">
+          <label for="supplier">Supplier Name</label>
+          <input type="text" id="supplier" placeholder="Enter supplier name">
+
+          <label for="product">Product</label>
+          <input type="text" id="product" placeholder="Enter product name">
+
+          <label for="qty">Quantity</label>
+          <input type="number" id="qty" placeholder="Enter quantity">
+
+          <label for="cost">Cost</label>
+          <input type="number" id="cost" placeholder="Enter cost">
+
+          <label for="payment">Payment Method</label>
+          <select id="payment">
+            <option>Cash</option>
+            <option>Bank</option>
+            <option>Mobile</option>
+            <option>Others</option>
+          </select>
+
+          <button type="submit" class="btn-save">Save Purchase</button>
+        </form>
+      </section>
+
+      <!-- Recent Purchases Table -->
+      <section class="section">
+        <h2>📋 Recent Purchases</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Invoice</th>
+              <th>Supplier</th>
+              <th>Product</th>
+              <th>Qty</th>
+              <th>Total</th>
+              <th>Payment</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#P-001</td>
+              <td>ABC Traders</td>
+              <td>Cement</td>
+              <td>100</td>
+              <td>৳ 40,000</td>
+              <td>Cash</td>
+              <td>
+                <button class="btn-edit">Edit</button>
+                <button class="btn-delete">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>#P-002</td>
+              <td>XYZ Suppliers</td>
+              <td>Rod</td>
+              <td>1 Ton</td>
+              <td>৳ 55,000</td>
+              <td>Bank</td>
+              <td>
+                <button class="btn-edit">Edit</button>
+                <button class="btn-delete">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+    <script src="JS/app.js"></script>
+  <script src="JS/include.js"></script>
+</body>
+</html>

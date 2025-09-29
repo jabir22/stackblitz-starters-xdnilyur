@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Hisab - Accounts</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+  
+   <!-- Header -->
+<div id="header-container"></div>
+
+
+  <!-- Layout -->
+  <div class="layout">
+    <!-- Sidebar -->
+    <div id="sidebar-container"></div>
+
+
+
+
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <h1>🏦 Account Management</h1>
+
+      <!-- Top Actions -->
+      <div class="top-actions">
+        <input type="text" id="searchBox" placeholder="🔍 Search account...">
+        <button class="btn-save" onclick="openModal()">➕ Add Account</button>
+      </div>
+
+      <!-- Balance Summary -->
+      <section class="section">
+        <h2>💰 Balance Summary</h2>
+        <p><strong>Total Balance:</strong> ৳ 3,45,000</p>
+        <ul>
+          <li>Cash: ৳ 1,20,000</li>
+          <li>Bank: ৳ 2,00,000</li>
+          <li>Mobile Banking: ৳ 25,000</li>
+        </ul>
+      </section>
+
+      <!-- Accounts Table -->
+      <section class="section">
+        <h2>📋 Account List</h2>
+        <table id="accountsTable">
+          <thead>
+            <tr>
+              <th>Account Name</th>
+              <th>Type</th>
+              <th>Balance</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cash in Hand</td>
+              <td>Cash</td>
+              <td>৳ 1,20,000</td>
+              <td>
+                <button class="btn-edit">Edit</button>
+                <button class="btn-delete">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Sonali Bank</td>
+              <td>Bank</td>
+              <td>৳ 2,00,000</td>
+              <td>
+                <button class="btn-edit">Edit</button>
+                <button class="btn-delete">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>bKash</td>
+              <td>Mobile Banking</td>
+              <td>৳ 25,000</td>
+              <td>
+                <button class="btn-edit">Edit</button>
+                <button class="btn-delete">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <!-- Add Account Modal -->
+  <div class="modal" id="accountModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>➕ Add New Account</h2>
+        <span class="close-btn" onclick="closeModal()">✖</span>
+      </div>
+      <form class="form">
+        <label>Account Name</label>
+        <input type="text" placeholder="Enter account name">
+
+        <label>Type</label>
+        <select>
+          <option value="Cash">Cash</option>
+          <option value="Bank">Bank</option>
+          <option value="Mobile Banking">Mobile Banking</option>
+        </select>
+
+        <label>Initial Balance</label>
+        <input type="number" placeholder="Enter balance">
+
+        <button type="submit" class="btn-save">Save Account</button>
+      </form>
+    </div>
+  </div>
+  <script src="JS/app.js"></script>
+  <script src="JS/include.js"></script>
+</body>
+</html>

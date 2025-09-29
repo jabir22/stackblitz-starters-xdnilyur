@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Accounts Report - Business Hisab</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .balance-cards {display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:12px}
+    .card{background:#fff;padding:14px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.05)}
+    table{width:100%;border-collapse:collapse}
+    th,td{padding:10px;border-bottom:1px solid #f1f1f1}
+    th{background:#f7f7f7}
+  </style>
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-left"><div class="logo">📊 Business Hisab</div></div>
+    <div class="header-center"><input class="search-bar" placeholder="🔎 Search..." /></div>
+    <div class="header-right"><a href="notifications.html"><button class="icon-btn">🔔</button></a></div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="accounts-report.html" class="active">Accounts</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <h1>💳 Accounts Report</h1>
+
+      <div class="section">
+        <div class="balance-cards">
+          <div class="card"><h4>Total Balance</h4><p style="font-weight:700;">৳ 3,00,000</p></div>
+          <div class="card"><h4>Cash Balance</h4><p style="font-weight:700;">৳ 50,000</p></div>
+          <div class="card"><h4>Bank Balance</h4><p style="font-weight:700;">৳ 2,00,000</p></div>
+          <div class="card"><h4>Mobile Wallet</h4><p style="font-weight:700;">৳ 25,000</p></div>
+        </div>
+
+        <h4>Account Details</h4>
+        <table>
+          <thead><tr><th>Account</th><th>Type</th><th>Balance</th><th>Last Transaction</th></tr></thead>
+          <tbody>
+            <tr><td>Cash</td><td>Asset</td><td>৳ 50,000</td><td>25 Sep 2025</td></tr>
+            <tr><td>Bank - DBBL</td><td>Asset</td><td>৳ 2,00,000</td><td>22 Sep 2025</td></tr>
+            <tr><td>bKash</td><td>Asset</td><td>৳ 25,000</td><td>24 Sep 2025</td></tr>
+          </tbody>
+        </table>
+
+        <div style="margin-top:12px;">
+          <a class="btn-save" href="#">Export CSV</a>
+          <a class="btn-edit" href="#">Print</a>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Hisab - Suppliers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <!-- Header -->
+<div id="header-container"></div>
+
+
+  <!-- Layout -->
+  <div class="layout">
+    <!-- Sidebar -->
+       <div id="sidebar-container"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <h1>🏭 Supplier Management</h1>
+
+      <!-- Supplier Entry Form -->
+      <section class="section">
+        <h2>➕ Add New Supplier</h2>
+        <form class="form">
+          <label for="sname">Supplier Name</label>
+          <input type="text" id="sname" placeholder="Enter supplier name">
+
+          <label for="sphone">Phone</label>
+          <input type="text" id="sphone" placeholder="Enter phone number">
+
+          <label for="semail">Email</label>
+          <input type="email" id="semail" placeholder="Enter email">
+
+          <label for="saddress">Address</label>
+          <input type="text" id="saddress" placeholder="Enter address">
+
+          <button type="submit" class="btn-save">Save Supplier</button>
+        </form>
+      </section>
+
+      <!-- Suppliers List -->
+      <section class="section">
+        <h2>📋 Supplier List</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Phone</th>
+              <th>Email</th>
+              <th>Address</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#S-001</td>
+              <td>ABC Traders</td>
+              <td>01811-111111</td>
+              <td>abc@example.com</td>
+              <td>Dhaka</td>
+              <td>
+                <button class="btn-edit">Edit</button>
+                <button class="btn-delete">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>#S-002</td>
+              <td>XYZ Suppliers</td>
+              <td>01822-222222</td>
+              <td>xyz@example.com</td>
+              <td>Chittagong</td>
+              <td>
+                <button class="btn-edit">Edit</button>
+                <button class="btn-delete">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+    <script src="JS/app.js"></script>
+  <script src="JS/include.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Stock Report - Business Hisab</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .low {color:#e74c3c;font-weight:700}
+    .ok {color:#2ecc71;font-weight:700}
+    .spark {height:10px;background:#1abc9c;border-radius:6px;display:inline-block}
+    table{width:100%;border-collapse:collapse}
+    th,td{padding:10px;border-bottom:1px solid #f1f1f1}
+    th{background:#f7f7f7}
+  </style>
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-left"><div class="logo">📊 Business Hisab</div></div>
+    <div class="header-center"><input class="search-bar" placeholder="🔎 Search..." /></div>
+    <div class="header-right"><a href="notifications.html"><button class="icon-btn">🔔</button></a></div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="stock-report.html" class="active">Stock</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <h1>📦 Stock Report</h1>
+
+      <div class="section">
+        <h4>Stock Summary</h4>
+        <table>
+          <thead><tr><th>Product</th><th>Category</th><th>Stock</th><th>Threshold</th><th>Status</th><th>Movement (7d)</th></tr></thead>
+          <tbody>
+            <tr><td>Cement</td><td>Building</td><td>8 Bag</td><td>10 Bag</td><td class="low">Low</td><td><span class="spark" style="width:60%"></span></td></tr>
+            <tr><td>Rod 10mm</td><td>Construction</td><td>85 Pcs</td><td>20 Pcs</td><td class="ok">OK</td><td><span class="spark" style="width:80%"></span></td></tr>
+            <tr><td>Bricks</td><td>Building</td><td>2000 Pcs</td><td>300 Pcs</td><td class="ok">OK</td><td><span class="spark" style="width:40%"></span></td></tr>
+          </tbody>
+        </table>
+
+        <div style="margin-top:12px;">
+          <a class="btn-save" href="#">Export CSV</a>
+          <a class="btn-edit" href="#">Print</a>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

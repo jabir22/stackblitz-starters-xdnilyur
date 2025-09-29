@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile - Business Hisab</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Profile Cover */
+    .profile-cover {
+      background: url("https://picsum.photos/1200/300?blur=2") no-repeat center/cover;
+      height: 200px;
+      border-radius: 10px 10px 0 0;
+      position: relative;
+    }
+
+    /* Avatar */
+    .profile-avatar:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+      opacity: 100%;
+      width: auto;
+    }
+    .profile-avatar {
+        background-color: #1abc9c;
+        padding: 10px;
+        border-radius: 2ch;
+      position: fixed;
+      bottom: 60px;
+      left: 30px;
+      display: flex;
+      align-items: center;
+    }
+    .profile-avatar img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .profile-avatar .info {
+      margin-left: 20px;
+      color: #fff;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
+    .profile-avatar .info h2 {
+      margin-bottom: 5px;
+    }
+    .badge {
+      background: #1abc9c;
+      color: #fff;
+      padding: 3px 8px;
+      border-radius: 12px;
+      font-size: 12px;
+      margin-left: 8px;
+    }
+
+    /* Profile Content */
+    .profile-content {
+      margin-top: 80px;
+      display: grid;
+      gap: 20px;
+    }
+    .profile-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .profile-box h3 {
+      margin-bottom: 15px;
+      font-size: 18px;
+      color: #2c3e50;
+    }
+    .profile-details {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 20px;
+    }
+    .profile-details p {
+      font-size: 14px;
+      color: #555;
+    }
+    .profile-details strong {
+      display: block;
+      font-weight: 600;
+      color: #2c3e50;
+    }
+
+    /* Activity Timeline */
+    .timeline {
+      list-style: none;
+      padding-left: 0;
+    }
+    .timeline li {
+      position: relative;
+      padding-left: 25px;
+      margin-bottom: 15px;
+      color: #555;
+    }
+    .timeline li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #3498db;
+      font-size: 20px;
+      line-height: 1;
+    }
+
+    /* Small Buttons (UI Only) */
+    .edit-btn {
+      background: #3498db;
+      color: #fff;
+      border: none;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 12px;
+      cursor: not-allowed; /* demo only */
+      float: right;
+    }
+  </style>
+</head>
+<body>
+ <!-- Header -->
+<div id="header-container"></div>
+
+
+  <!-- Layout -->
+  <div class="layout">
+    <!-- Sidebar -->
+       <div id="sidebar-container"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="profile-cover"></div>
+
+      <!-- Avatar + Info -->
+      <div class="profile-avatar">
+        <img src="https://i.pravatar.cc/150?img=5" alt="User Avatar">
+        <div class="info">
+          <h2>Admin User <span class="badge">Super Admin</span></h2>
+          <p>System Administrator | Business Hisab</p>
+        </div>
+      </div>
+
+      <!-- Profile Sections -->
+      <div class="profile-content">
+        <!-- Personal Information -->
+        <div class="profile-box">
+          <h3>Personal Information <button class="edit-btn">Edit</button></h3>
+          <div class="profile-details">
+            <p><strong>Full Name:</strong> Admin User</p>
+            <p><strong>Date of Birth:</strong> 15 Jan 1990</p>
+            <p><strong>Email:</strong> admin@business.com</p>
+            <p><strong>Phone:</strong> +880123456789</p>
+            <p><strong>Address:</strong> Dhaka, Bangladesh</p>
+            <p><strong>Joined:</strong> March 2022</p>
+          </div>
+        </div>
+
+        <!-- Professional Information -->
+        <div class="profile-box">
+          <h3>Professional Information <button class="edit-btn">Edit</button></h3>
+          <div class="profile-details">
+            <p><strong>Role:</strong> Administrator</p>
+            <p><strong>Department:</strong> IT & Systems</p>
+            <p><strong>Employee ID:</strong> EMP-001</p>
+            <p><strong>Status:</strong> Active</p>
+          </div>
+        </div>
+
+        <!-- Security -->
+        <div class="profile-box">
+          <h3>Security <button class="edit-btn">Edit</button></h3>
+          <div class="profile-details">
+            <p><strong>Two-Factor Authentication:</strong> Enabled ✅</p>
+            <p><strong>Last Login:</strong> 25 Sept 2025, 10:45 AM</p>
+            <p><strong>IP Address:</strong> 103.100.55.120</p>
+          </div>
+        </div>
+
+        <!-- Activity Timeline -->
+        <div class="profile-box">
+          <h3>Recent Activity</h3>
+          <ul class="timeline">
+            <li>Updated password (Sept 20, 2025)</li>
+            <li>Logged in from new device (Sept 18, 2025)</li>
+            <li>Enabled 2FA (Sept 10, 2025)</li>
+            <li>Account created (March 2022)</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </div>
+    <script src="JS/app.js"></script>
+  <script src="JS/include.js"></script>
+</body>
+</html>

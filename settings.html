@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Hisab - Settings</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* কিছু কাস্টম স্টাইল settings এর জন্য */
+    .settings-section {
+      margin-bottom: 25px;
+    }
+    .settings-section h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 5px;
+    }
+    .settings-actions {
+      margin-top: 10px;
+    }
+    .settings-actions button {
+      margin-right: 8px;
+    }
+    .info-box {
+      background: #ecf0f1;
+      padding: 15px;
+      border-radius: 6px;
+      margin-top: 10px;
+    }
+    .info-box p {
+      margin: 6px 0;
+    }
+  </style>
+</head>
+<body>
+ <!-- Header -->
+<div id="header-container"></div>
+
+
+  <!-- Layout -->
+  <div class="layout">
+    <!-- Sidebar -->
+       <div id="sidebar-container"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <h1>⚙️ Application Settings</h1>
+
+      <!-- General Settings -->
+      <section class="section settings-section">
+        <h2>🛠️ General</h2>
+        <form class="form">
+          <label for="stock-threshold">Low Stock Threshold</label>
+          <input type="number" id="stock-threshold" placeholder="Enter default stock threshold">
+        </form>
+      </section>
+
+      <!-- Backup / Restore -->
+      <section class="section settings-section">
+        <h2>💾 Backup & Restore</h2>
+        <p>আপনার সমস্ত ডাটাকে JSON আকারে Export বা Import করতে পারবেন।</p>
+        <div class="settings-actions">
+          <button type="button" class="btn-save">⬇ Export Backup</button>
+          <button type="button" class="btn-edit">⬆ Import Backup</button>
+        </div>
+      </section>
+
+      <!-- Security -->
+      <section class="section settings-section">
+        <h2>🔐 Security</h2>
+        <form class="form">
+          <label for="old-pass">Old Password</label>
+          <input type="password" id="old-pass" placeholder="Enter old password">
+
+          <label for="new-pass">New Password</label>
+          <input type="password" id="new-pass" placeholder="Enter new password">
+
+          <label for="confirm-pass">Confirm Password</label>
+          <input type="password" id="confirm-pass" placeholder="Confirm new password">
+
+          <button type="submit" class="btn-save">Change Password</button>
+        </form>
+      </section>
+
+      <!-- App Info -->
+      <section class="section settings-section">
+        <h2>ℹ️ App Information</h2>
+        <div class="info-box">
+          <p><strong>App Name:</strong> Business Hisab</p>
+          <p><strong>Version:</strong> 1.0.0</p>
+          <p><strong>Developer:</strong> Your Company Name</p>
+          <p><strong>Support Email:</strong> support@example.com</p>
+        </div>
+      </section>
+    </main>
+  </div>
+    <script src="JS/app.js"></script>
+  <script src="JS/include.js"></script>
+</body>
+</html>

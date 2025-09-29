@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Account</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <!-- Header -->
+  <div id="header-container"></div>
+  <!-- Layout -->
+  <div class="layout">
+        <!-- Sidebar -->
+    <div id="sidebar-container"></div>
+    <main class="main-content">
+      <h3> <a href="../accounts.html" class="app-header"> to account</a></h3>
+      <h1>Edit Account</h1>
+      <form class="form" id="editForm">
+        <input type="hidden" id="accIndex" value="0">
+        <label>Account Name</label>
+        <input type="text" value="Cash" id="accName" placeholder="Enter account name">
+        <label>Type</label>
+        <select id="accType">
+          <option>Cass</option>
+          <option>Bank</option>
+          <option>Mobile Bank</option>
+        </select>
+        <label>Balance</label>
+        <input type="number" id="accBalance" placeholder="৳">
+        <div class="btn-row">
+          <button type="submit" class="btn-save">💾 Update Account</button>
+          <button type="button" id="deleteBtn" class="btn-delete">🗑 Delete</button>
+        </div>
+      </form>
+              <a href="accounts.html" class="btn-save">⬅ Back to List</a>
+    </main>
+  </div>
+  <script src="../JS/app.js"></script>
+  <script src="../JS/include.js"></script>
+  <script src="../JS/edit-account.js"></script>
+</body>
+</html>

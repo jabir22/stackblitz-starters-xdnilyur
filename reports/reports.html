@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Reports - Business Hisab</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .report-tabs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+        }
+
+        .tab {
+            padding: 8px 12px;
+            background: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #2c3e50;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+        }
+
+        .tab.active {
+            border-left: 4px solid #1abc9c;
+            font-weight: 600;
+        }
+
+        .summary-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 14px;
+        }
+
+        .summary-card {
+            background: #fff;
+            padding: 18px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+            text-align: center;
+        }
+
+        .chart-placeholder {
+            background: linear-gradient(90deg, #ecf9f5, #f0f7ff);
+            padding: 18px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .export-actions {
+            display: flex;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .export-actions a {
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 6px;
+            background: #1abc9c;
+            color: #fff;
+        }
+
+        .section .table {
+            width: 100%;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+            border-radius: 6px;
+            overflow: hidden
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #f1f1f1;
+            text-align: left
+        }
+
+        th {
+            background: #f7f7f7
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header (same as your index) -->
+    <header class="app-header">
+        <div class="header-left">
+            <div class="logo">📊 Business Hisab</div>
+        </div>
+        <div class="header-center"><input class="search-bar" placeholder="🔎 Search..." /></div>
+        <div class="header-right">
+            <a href="notifications.html"><button class="icon-btn">🔔</button></a>
+            <button class="icon-btn">⚙️</button>
+            <div class="profile-menu">
+                <span class="profile-name">👤 Admin ▾</span>
+                <ul class="dropdown">
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="layout">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="accounts.html">Accounts</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="sales.html">Sales</a></li>
+                <li><a href="purchases.html">Purchases</a></li>
+                <li><a href="customers.html">Customers</a></li>
+                <li><a href="suppliers.html">Suppliers</a></li>
+                <li><a href="reports.html" class="active">Reports</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <h1>📋 Reports</h1>
+
+            <div class="section">
+                <div class="report-tabs">
+                    <a class="tab active" href="reports.html">Overview</a>
+                    <a class="tab" href="sales-report.html">Sales</a>
+                    <a class="tab" href="purchases-report.html">Purchases</a>
+                    <a class="tab" href="stock-report.html">Stock</a>
+                    <a class="tab" href="accounts-report.html">Accounts</a>
+                    <a class="tab" href="custom-report.html">Custom</a>
+                </div>
+
+                <div class="summary-cards">
+                    <div class="summary-card">
+                        <h4>Total Sales (This Month)</h4>
+                        <p style="font-size:20px;font-weight:700;">৳ 1,20,000</p>
+                    </div>
+                    <div class="summary-card">
+                        <h4>Total Purchases (This Month)</h4>
+                        <p style="font-size:20px;font-weight:700;">৳ 80,000</p>
+                    </div>
+                    <div class="summary-card">
+                        <h4>Stock Value</h4>
+                        <p style="font-size:20px;font-weight:700;">৳ 75,000</p>
+                    </div>
+                    <div class="summary-card">
+                        <h4>Net Profit</h4>
+                        <p style="font-size:20px;font-weight:700;">৳ 40,000</p>
+                    </div>
+                </div>
+
+                <div class="chart-placeholder">
+                    <!-- simple static SVG mini chart -->
+                    <svg width="100%" height="160" viewBox="0 0 600 160" preserveAspectRatio="none">
+                        <rect x="0" y="0" width="600" height="160" fill="transparent" />
+                        <!-- bars: Sales -->
+                        <rect x="40" y="40" width="40" height="100" rx="4" fill="#1abc9c" />
+                        <rect x="110" y="60" width="40" height="80" rx="4" fill="#1abc9c" />
+                        <rect x="180" y="50" width="40" height="90" rx="4" fill="#1abc9c" />
+                        <rect x="250" y="30" width="40" height="110" rx="4" fill="#1abc9c" />
+                        <rect x="320" y="45" width="40" height="95" rx="4" fill="#1abc9c" />
+                        <rect x="390" y="20" width="40" height="120" rx="4" fill="#1abc9c" />
+                        <!-- legend -->
+                        <text x="10" y="15" fill="#2c3e50" font-size="12">Sales vs Purchases (demo)</text>
+                    </svg>
+                </div>
+
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px;">
+                    <div style="font-size:14px;color:#666;">Showing demo data — filter by date in specific report pages.
+                    </div>
+                    <div class="export-actions">
+                        <a href="#">Export CSV</a>
+                        <a href="#">Download PDF</a>
+                        <a href="#">Print</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

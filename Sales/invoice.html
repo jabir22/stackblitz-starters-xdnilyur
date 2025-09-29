@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice - Business Hisab</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .invoice-box {
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      max-width: 700px;
+      margin: auto;
+    }
+    .invoice-box h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .invoice-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .invoice-header div {
+      width: 48%;
+    }
+    .invoice-footer {
+      margin-top: 30px;
+      text-align: center;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <header class="app-header">
+    <div class="logo">📊 Business Hisab</div>
+    <div class="user-info">👤 Admin</div>
+  </header>
+
+  <main class="main-content">
+    <div class="invoice-box">
+      <h2>Invoice</h2>
+
+      <div class="invoice-header">
+        <div>
+          <strong>From:</strong><br>
+          Business Hisab<br>
+          Dhaka, Bangladesh
+        </div>
+        <div>
+          <strong>To:</strong><br>
+          Mr. Rahim<br>
+          017XXXXXXXX
+        </div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Qty</th>
+            <th>Price</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cement</td>
+            <td>10</td>
+            <td>৳ 500</td>
+            <td>৳ 5000</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="3">Discount</th>
+            <td>-৳ 500</td>
+          </tr>
+          <tr>
+            <th colspan="3">Grand Total</th>
+            <td>৳ 4500</td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <div class="invoice-footer">
+        ✅ Thank you for your purchase!
+      </div>
+    </div>
+  </main>
+</body>
+</html>

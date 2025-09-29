@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accounts - Business Hisab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+ <!-- Header -->
+<div id="header-container"></div>
+
+
+  <!-- Layout -->
+  <div class="layout">
+    <!-- Sidebar -->
+       <div id="sidebar-container"></div>
+
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="accounts.html" class="active">Accounts</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="sales.html">Sales</a></li>
+        <li><a href="purchases.html">Purchases</a></li>
+        <li><a href="customers.html">Customers</a></li>
+        <li><a href="suppliers.html">Suppliers</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <h1>💰 Accounts</h1>
+      <a href="add-account.html" class="btn-save">+ Add New Account</a>
+      <table>
+        <thead>
+          <tr>
+            <th>Account Name</th>
+            <th>Type</th>
+            <th>Balance</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cash</td>
+            <td>Asset</td>
+            <td>৳ 50,000</td>
+            <td>
+              <a href="account-details.html" class="btn-edit">View</a>
+              <a href="edit-account.html" class="btn-edit">Edit</a>
+              <button class="btn-delete">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Bank - DBBL</td>
+            <td>Asset</td>
+            <td>৳ 2,00,000</td>
+            <td>
+              <a href="account-details.html" class="btn-edit">View</a>
+              <a href="edit-account.html" class="btn-edit">Edit</a>
+              <button class="btn-delete">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+    <script src="JS/app.js"></script>
+  <script src="JS/include.js"></script>
+</body>
+</html>

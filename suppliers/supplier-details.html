@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supplier Details</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <div id="header-container"></div>
+  <div class="layout">
+    <div id="sidebar-container"></div>
+    <main class="main-content">
+      <div class="details-container">
+        <h1>📋 Supplier Details</h1>
+
+        <div class="detail-row">
+          <span class="detail-label">Supplier Name</span>
+          <div class="detail-value" id="detailName"></strong> <span id="dName"></span></div>
+        </div>
+
+        <div class="detail-row">
+          <span class="detail-label">Company</span>
+          <div class="detail-value" id="detailCompany"><span id="dCompany"></div>
+        </div>
+
+        <div class="detail-row">
+          <span class="detail-label">Phone</span>
+          <div class="detail-value" id="detailPhone"><span id="dPhone"></span></div>
+        </div>
+
+        <div class="detail-row">
+          <span class="detail-label">Address</span>
+          <div class="detail-value" id="detailAddress"><span id="dAddress"></div>
+        </div>
+
+        <div class="actions">
+          <a href="edit-supplier.html" class="btn btn-edit">✏️ Edit</a>
+          <button class="btn btn-delete" id="deleteSupplier">🗑️ Delete</button>
+          <a href="suppliers.html" class="btn btn-back">⬅️ Back</a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../JS/app.js"></script>
+  <script src="../JS/include.js"></script>
+  <script src="../JS/suppliers.js"></script>
+</body>
+
+</html>

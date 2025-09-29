@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supplier Bills - Business Hisab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-left">
+      <div class="logo">💵 Supplier Bills</div>
+    </div>
+    <div class="header-right">
+      <a href="notifications.html"><button class="icon-btn">🔔</button></a>
+      <button class="icon-btn">⚙️</button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="purchases.html" class="active">Purchases</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <h1>💵 Supplier Bills</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Bill ID</th>
+            <th>Supplier</th>
+            <th>Date</th>
+            <th>Amount</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>B-001</td>
+            <td>ABC Traders</td>
+            <td>2025-09-20</td>
+            <td>৳ 50,000</td>
+            <td>Paid</td>
+            <td><a href="#" class="btn-edit">View</a></td>
+          </tr>
+          <tr>
+            <td>B-002</td>
+            <td>XYZ Suppliers</td>
+            <td>2025-09-22</td>
+            <td>৳ 25,000</td>
+            <td>Unpaid</td>
+            <td><a href="#" class="btn-edit">Pay</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+</body>
+</html>

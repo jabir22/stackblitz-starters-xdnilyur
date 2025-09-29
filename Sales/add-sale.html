@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Sale - Business Hisab</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <!-- Header -->
+  <div id="header-container"></div>
+  <!-- Layout -->
+  <div class="layout">
+        <!-- Sidebar -->
+    <div id="sidebar-container"></div>
+         <!-- Main Content -->
+    <main class="main-content">
+      <h1>➕ Add New Sale</h1>
+
+      <div class="section">
+        <form class="form">
+          <!-- Customer Info -->
+          <label>Customer Name</label>
+          <input type="text" placeholder="Enter customer name">
+
+          <label>Customer Phone</label>
+          <input type="text" placeholder="Enter phone number">
+
+          <!-- Product Info -->
+          <label>Product</label>
+          <select>
+            <option>Cement</option>
+            <option>Rod 10mm</option>
+            <option>Brick</option>
+            <option>Sand</option>
+          </select>
+
+          <label>Quantity</label>
+          <input type="number" placeholder="Enter quantity">
+
+          <label>Price per Unit (৳)</label>
+          <input type="number" placeholder="Enter price">
+
+          <label>Discount (%)</label>
+          <input type="number" placeholder="Enter discount">
+
+          <label>Payment Status</label>
+          <select>
+            <option>Paid</option>
+            <option>Due</option>
+          </select>
+
+          <button type="submit" class="btn-save">💾 Save Sale</button>
+        </form>
+      </div>
+    </main>
+  </div>
+  <script src="../JS/app.js"></script>
+  <script src="../JS/include.js"></script>
+  <script src="../JS/app.js"></script>
+  <script src="../JS/sidebar.js"></script>
+</body>
+</html>

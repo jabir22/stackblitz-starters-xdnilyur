@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suppliers</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div id="header-container"></div>
+
+
+  <!-- Layout -->
+  <div class="layout">
+    <!-- Sidebar -->
+       <div id="sidebar-container"></div>
+
+    <main class="main-content">
+      <h1>📋 Supplier List</h1>
+      <a href="add-supplier.html" class="btn-save">➕ Add Supplier</a>
+      <p id="supplierCount" style="margin:10px 0; font-weight:bold;"></p>
+
+<table id="suppliersTable">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Company</th>
+      <th>Phone</th>
+      <th>Address</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody id="suppliersTable">
+    <!-- JS দিয়ে আসবে -->
+  </tbody>
+</table>
+<p id="supplierCount"></p>
+    </main>
+  </div>
+  <script src="../JS/app.js"></script>
+  <script src="../JS/include.js"></script>
+  <script src="../JS/suppliers.js"></script>
+</body>
+</html>

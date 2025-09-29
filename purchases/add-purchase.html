@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Purchase - Business Hisab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-left">
+      <div class="logo">➕ Add Purchase</div>
+    </div>
+    <div class="header-right">
+      <a href="notifications.html"><button class="icon-btn">🔔</button></a>
+      <button class="icon-btn">⚙️</button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="purchases.html" class="active">Purchases</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <h1>➕ Add Purchase</h1>
+      <form>
+        <label>Supplier:</label>
+        <input type="text" placeholder="Supplier Name">
+
+        <label>Date:</label>
+        <input type="date">
+
+        <label>Product:</label>
+        <input type="text" placeholder="Product Name">
+
+        <label>Quantity:</label>
+        <input type="number" placeholder="Enter Quantity">
+
+        <label>Unit Price:</label>
+        <input type="number" placeholder="৳ Price">
+
+        <label>Total:</label>
+        <input type="number" placeholder="Auto Calculation">
+
+        <button type="submit" class="btn-save">💾 Save Purchase</button>
+      </form>
+    </main>
+  </div>
+</body>
+</html>

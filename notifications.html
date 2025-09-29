@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notifications - Business Hisab</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Notification Styles */
+    .notifications {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .notify-card {
+      padding: 15px;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .notify-card span {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+
+    .success { background: #16a34a; }  /* সবুজ */
+    .warning { background: #f59e0b; }  /* হলুদ */
+    .error   { background: #dc2626; }  /* লাল */
+    .info    { background: #2563eb; }  /* নীল */
+
+    .notify-close {
+      background: rgba(255,255,255,0.2);
+      border: none;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      padding: 5px 10px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .notify-close:hover {
+      background: rgba(255,255,255,0.4);
+    }
+  </style>
+</head>
+<body>
+ <!-- Header -->
+<div id="header-container"></div>
+
+
+  <!-- Layout -->
+  <div class="layout">
+    <!-- Sidebar -->
+       <div id="sidebar-container"></div>
+
+    <!-- Main -->
+    <main class="main-content">
+      <h1>🔔 Notifications</h1>
+      <p>এখানে আপনার সকল সিস্টেম নোটিফিকেশন ও ইনফরমেশন মেসেজ দেখা যাবে।</p>
+
+      <div class="notifications">
+        <div class="notify-card success">
+          <span>✅</span> Sale successfully added (Cement 5 Bag - ৳2500)
+          <button class="notify-close">✖</button>
+        </div>
+        <div class="notify-card warning">
+          <span>⚠️</span> Stock running low for Rod 10mm (Only 12 pcs left)
+          <button class="notify-close">✖</button>
+        </div>
+        <div class="notify-card error">
+          <span>❌</span> Payment failed: Transaction ID #4521
+          <button class="notify-close">✖</button>
+        </div>
+        <div class="notify-card info">
+          <span>ℹ️</span> New software update available! Please refresh.
+          <button class="notify-close">✖</button>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="JS/app.js"></script>
+  <script src="JS/include.js"></script>
+  <script>
+    // Notification close button
+    document.querySelectorAll(".notify-close").forEach(btn => {
+      btn.addEventListener("click", function(){
+        this.parentElement.style.display = "none";
+      });
+    });
+  </script>
+</body>
+</html>
